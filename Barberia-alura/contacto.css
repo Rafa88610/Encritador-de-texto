@@ -1,0 +1,138 @@
+/* header */
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+    /* Panel de navegación */
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;    
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/* Contenido de la página */
+main{
+    width: 940px;
+    margin: 0 auto;    
+}
+
+.formulario{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.horarios{
+    margin: 20px 0;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+/* -----> Marcadores e p */
+/* p{
+    color: red;
+}
+
+form p{
+    color: blue;
+}
+
+.test{
+    color: green;
+}
+
+p.test{
+    color: orange;
+}
+
+#test-p{
+    color: purple;
+} */
+/* -------------------> */
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(184, 101, 1);
+    /* transform: scale(1.2) rotate(45deg); */
+    /* Se puede colocar dos porpiedades de transfor en uno solo para que los efectos salgan parejos y no se distorcionen */
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px !important;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000 !important;
+    padding: 8px 15px !important;
+}
+
+
+
+/* Pie de página */
+
+footer{    
+    text-align: center;    
+    background: url(img/bg.jpg);    
+}
+
+.copyright{
+    color: #ffffff;
+    padding-bottom: 30px;
+}

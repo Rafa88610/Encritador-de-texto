@@ -1,0 +1,256 @@
+/* ------>Generales */
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* ---------->header */
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Panel de navegación */
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;    
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/*  ----------> Main */
+
+/* Aquí inicia el CSS para nuestra home */
+.banner{
+    width: 100%;
+}
+
+/* Selección de elementos en CSS */
+
+/* main p:first-child{
+    background: red;
+} */
+
+/* elemento > hijo directo del elemento padre*/
+
+/* main > p{
+    background: red;
+} */
+
+/* aplicar al Primer párrafo despues de un img */
+/* img + p{
+    background: yellow;
+} */
+
+/* aplicar a Todos los parrafos despues de img */
+/* img ~ p{
+    background: green;
+} */
+
+/* aplicar a Todos menos #mision */
+/* .principal p:not(#mision){
+    background: orange;
+} */
+
+.principal{
+    background: rgb(240, 240, 240);
+    /* padding: 20px 0 0 0; */
+    padding: 1em 0;
+    /* margin: 0 10%; */
+}
+
+.principal-contenido{
+    margin: 0 10%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    /* color: rgba(0,0,0,0.3); */
+    text-shadow: 1px 1px 5px rgb(82, 82, 82);
+}
+
+/* .titulo-principal::first-letter{
+    font-weight: bold;
+}
+
+.titulo-principal::before{
+    content: "[";
+}
+
+.titulo-principal::after{
+    content: "]";
+} */
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+/* p:first-line{
+    font-style: italic;
+} */
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+/* Calculo de ancho para responsive, porcentaje de su área padre*/
+.utensilios{
+    width: calc(11%);
+    /* width: 100px; */
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{    
+    padding: 0 0 1em;
+    background: linear-gradient(rgb(240, 240, 240) 50%, rgb(181, 181, 181));
+    /* background: linear-gradient(90deg, orange 50%, blue, red, black); */
+    /* background: radial-gradient(rgb(235, 182, 82) 35%, rgb(135, 61, 204), rgb(71, 223, 162), rgb(230, 87, 187)); */
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa-contenido iframe{
+    width: 940px;
+}
+
+.diferenciales{
+    background: rgb(181, 181, 181);
+    /* background: #888; */
+    padding: 1em 0;
+    /* margin: 0 10%; */
+    box-shadow: inset 0 0 30px rgb(48, 48, 48);
+    /* Sombra interna para un elemento */
+
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{      
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;  
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items::before{
+    content: "★";
+}
+
+.items:first-child{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.items:last-child{
+    font-style: italic;
+}
+
+/* especifica el número del hijo */
+
+.items::nth-child(3){
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.img-diferenciales{
+    width: 40%;    
+    transition: 500ms;
+    /* box-shadow: x -y difuminación tamaño color; */
+    box-shadow: 4px 4px 10px 2px #000000;
+    /* Se puede colocar más de una sombra */
+    /* box-shadow: 4px 4px 10px 2px #000000, 10px 5px 20px 2px red; */
+}
+
+
+.img-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+
+
+/*  ----------> Pie de página */
+
+footer{    
+    text-align: center;    
+    background: url(img/bg.jpg);    
+}
+
+.copyright{
+    color: #ffffff;
+    padding-bottom: 30px;
+}
+
+/*  ----------> adaptar pagina */
+/* Media Querys para responsive */
+
+@media screen and (max-width: 480px){
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .img-diferenciales{
+        width: 100%;
+    }
+
+    
+}
+
