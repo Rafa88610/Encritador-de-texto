@@ -1,1 +1,1 @@
-# Paágina web Barbería Alura
+# Página web Barbería Alura
